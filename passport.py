@@ -4,8 +4,7 @@ from matplotlib import pyplot as plt
 haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 img=cv2.imread('chasmis.jpg')
-# img=cv2.imread('dishank.jpg')
-# img=cv2.imread('dishank1.jpg')
+# img=cv2.imread('bacha.jpg')
 faces=haar_cascade.detectMultiScale(img,1.1,9)
 # img=cv2.resize(img,(850,1300))
 
@@ -40,8 +39,6 @@ cv2.imwrite('passportcrop2.jpg',crop)
 plt.imshow(img)
 plt.imshow(crop)
 plt.show()
-# cv2.imshow('img',img)
-# cv2.waitKey(0)
 
 
 
